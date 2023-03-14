@@ -1,0 +1,125 @@
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light_Grey: hsl(217, 12%, 63%);
+$Medium_Grey: hsl(216, 12%, 54%);
+$Dark_Grey: hsl(210, 29%, 24%);
+$Dark_Blue: hsl(213, 19%, 18%);
+$Very_Dark_Blue: hsl(216, 12%, 8%);
+
+@font-face {
+    font-family: "Overpass-Italic";
+    src: url(Overpass/Overpass-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Overpass";
+    src: url(Overpass/Overpass-VariableFont_wght.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $Very_Dark_Blue;
+    font-family: "Overpass";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div{
+    background-color: $Dark_Blue;
+    border-radius: 20px;
+    margin: 100px 30px;
+    padding: 20px;
+    
+    .heading{
+        margin: 15px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: $White;
+    }
+
+    .content{
+        font-size: 13px;
+        color: $Light_Grey;
+    }
+}
+
+.rating-div {
+
+    .rating-img {
+        background-color: $Dark_Grey;
+        border-radius: 50px;
+        padding: 10px 2px 3px 10px;
+        width: 25px;
+    }
+
+    .rating-button {
+        margin: 15px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        button {
+            background-color: $Dark_Grey;
+            color: $White;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 15px;
+        }
+
+        button:hover {
+            background-color: $Orange;
+        }
+    }
+
+    .rating-submit {
+        margin: 15px 0;
+
+        button{
+            background-color: $Orange;
+            color: $White;
+            width: 100%;
+            border: none;
+            border-radius: 50px;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        button:hover{
+            background-color: $White;
+            color: $Orange;
+        }
+    }
+}
+
+.thanks-div{
+    text-align: center;
+
+    .thanks-rate{
+        background-color: $Dark_Grey;
+        color: $Orange;
+        border-radius: 50px;
+        padding: 10px 2px 5px 10px;
+        font-size: 13px;
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: $White;
+    
+    a { 
+        color: $Orange; 
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    body{
+        height: 680px;
+    }
+    .main-div{     
+        margin: 10% 26%;
+       
+    }
+}

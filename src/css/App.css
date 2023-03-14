@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Overpass-Italic";
+  src: url(Overpass/Overpass-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Overpass";
+  src: url(Overpass/Overpass-VariableFont_wght.ttf);
+}
+body {
+  box-sizing: border-box;
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-div {
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 20px;
+  margin: 100px 30px;
+  padding: 20px;
+}
+.main-div .heading {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(0deg, 0%, 100%);
+}
+.main-div .content {
+  font-size: 13px;
+  color: hsl(217deg, 12%, 63%);
+}
+
+.rating-div .rating-img {
+  background-color: hsl(210deg, 29%, 24%);
+  border-radius: 50px;
+  padding: 10px 2px 3px 10px;
+  width: 25px;
+}
+.rating-div .rating-button {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.rating-div .rating-button button {
+  background-color: hsl(210deg, 29%, 24%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+}
+.rating-div .rating-button button:hover {
+  background-color: hsl(25deg, 97%, 53%);
+}
+.rating-div .rating-submit {
+  margin: 15px 0;
+}
+.rating-div .rating-submit button {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.rating-div .rating-submit button:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+.thanks-div {
+  text-align: center;
+}
+.thanks-div .thanks-rate {
+  background-color: hsl(210deg, 29%, 24%);
+  color: hsl(25deg, 97%, 53%);
+  border-radius: 50px;
+  padding: 10px 2px 5px 10px;
+  font-size: 13px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+.attribution a {
+  color: hsl(25deg, 97%, 53%);
+}
+
+@media only screen and (min-width: 375px) {
+  body {
+    height: 680px;
+  }
+
+  .main-div {
+    margin: 10% 26%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
